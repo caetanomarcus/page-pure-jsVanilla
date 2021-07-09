@@ -1,0 +1,933 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 63, 5%;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(assets/Gilroy-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Sovereign";
+    src: url(assets/Sovereign.otf);
+}
+
+
+/* HEADER */
+
+header {
+    height: auto;
+}
+
+main {
+    background-color: #2D2D2D;
+}
+
+
+/* PRINCIPAL HEADER : STAR WARS AND THE SITH IMAGE */
+
+.principal-header {
+    background-image: url(assets/star\ uó\ topo@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 43vw;
+    max-width: 100vw;
+    position: relative;
+}
+
+.principal-header-figures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.principal-header-figures figure {
+    width: 100%;
+}
+
+.star-img {
+    position: absolute;
+    bottom: 31%;
+    left: 19%;
+    width: 25vw;
+}
+
+.kylo-img {
+    position: absolute;
+    right: 19%;
+    top: 0;
+    z-index: 9;
+    width: 71vw;
+}
+
+.wars-img {
+    position: absolute;
+    right: 10%;
+    bottom: 31%;
+    width: 25vw;
+}
+
+.g4-img {
+    position: absolute;
+    top: 78%;
+    right: 12%;
+    width: 9vw;
+    z-index: 10;
+}
+
+@media (max-width:768px) {
+    .g4-img {
+        width: 15vw;
+        right: 7%;
+    }
+}
+
+
+/* SECONDARY HEADER - HEADER BOTTOM : ABOUT*/
+
+.secondary-header {
+    background-image: url(assets/sta_uo_robot@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75vw;
+    position: relative;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    height: 28vw;
+    position: relative;
+}
+
+.header-bottom::after {
+    content: "";
+    border: #707070 solid 2.7px;
+    background-color: #707070;
+    width: 77%;
+    height: 0.5px;
+    position: absolute;
+    bottom: -20%;
+    left: 14%;
+}
+
+.red-box {
+    background-image: url(assets/strom\ trupe\ red.png);
+    position: absolute;
+    top: -4%;
+    left: 14%;
+    z-index: 9;
+    width: 21vw;
+    height: 29vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.red-box-h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    width: 50%;
+    height: 33%;
+}
+
+.red-box-paragraph {
+    font-weight: 300;
+    font-size: 1vw;
+    width: 85%;
+    height: 33%;
+}
+
+.red-box-button {
+    font-size: 1vw;
+    color: #fff;
+    background-color: rgb(255, 255, 255, 0);
+    width: 10vw;
+    height: 2.5vw;
+    border: white solid 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.red-box-button:active {
+    transform: scale(0.99);
+}
+
+.about-game {
+    position: absolute;
+    top: 55%;
+    left: 38.8%;
+    width: 50vw;
+    display: flex;
+}
+
+.about-game-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30vw;
+    justify-content: space-between;
+    margin-right: 1vw;
+}
+
+.about-game-text h2 {
+    text-transform: uppercase;
+    font-size: 1.6vw;
+}
+
+.about-game-text span {
+    width: 9vw;
+    height: 3px;
+    background-color: #000;
+}
+
+.about-game-text p {
+    text-align: right;
+    font-size: 1.05vw;
+    width: 92%;
+}
+
+.about-game img {
+    width: 21vw;
+}
+
+
+/* HEADER BOTTOM 769PX */
+
+@media (max-width:769px) {
+    .secondary-header {
+        height: 150vw;
+    }
+    .header-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 180vw;
+    }
+    .header-bottom::after {
+        bottom: -5vw;
+    }
+    .about-game {
+        flex-direction: column-reverse;
+        position: static;
+        top: 61%;
+        width: 55vw;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 6vw;
+        margin-top: 4vh;
+    }
+    .about-game-text {
+        width: 90vw;
+        margin-right: 0;
+    }
+    .about-game-text h2 {
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    .about-game-text span {
+        width: 35vw;
+    }
+    .about-game-text p {
+        font-size: 2.5vw;
+        width: 90%;
+    }
+    .about-game img {
+        width: 60vw;
+    }
+    .red-box {
+        position: static;
+        height: 100%;
+        margin-top: 15%;
+        margin-right: 6%;
+        width: 60vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .red-box-h2 {
+        font-size: 6vw;
+    }
+    .red-box-paragraph {
+        font-size: 3vw;
+    }
+    .red-box-button {
+        font-size: 2vw;
+        width: 20vw;
+        height: 5vw;
+    }
+}
+
+
+/* HEADER BOTTOM 440PX */
+
+@media (max-width:440px) {
+    .secondary-header {
+        height: 140vw;
+    }
+    .header-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 175vw;
+    }
+    .red-box {
+        width: 60vw;
+        margin-top: 12%;
+    }
+}
+
+
+/* SECONDARY HEADER - STRUCTURE-BOX   */
+
+.structure-box {
+    height: 57vw;
+    position: absolute;
+    top: 80vw;
+}
+
+.structure-box-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.sith2-img {
+    margin-left: 30%;
+    width: 45vw;
+}
+
+.sith2 {
+    margin-left: 3%;
+}
+
+.rey {
+    margin-right: 8%;
+}
+
+.rey-img {
+    margin-top: 20%;
+    width: 21vw;
+}
+
+.structure-text {
+    height: 30vw;
+    width: 27%;
+    margin-bottom: 5%;
+}
+
+.h2-first {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vw;
+    display: inline-block;
+    text-align: right;
+    font-weight: 600;
+    width: 27vw;
+    height: 7%;
+    line-height: 0.5;
+}
+
+.h2-de {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vw;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin-left: 40%;
+    font-weight: 600;
+    height: 7%;
+}
+
+.h2-second {
+    font-family: "Sovereign";
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    display: inline-block;
+    text-align: right;
+    font-weight: 700;
+    height: 15%;
+    width: 30%;
+}
+
+.structure-text p {
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 2.4;
+    font-size: 1.5vw;
+    width: 27vw;
+    cursor: pointer;
+}
+
+.structure-text p:hover {
+    color: #fff;
+    background-color: #D74430;
+}
+
+
+/* STRUCTURE-BOX 769PX */
+
+@media (max-width:769px) {
+    .structure-box {
+        height: 100vw;
+        position: relative;
+        top: 35vw;
+    }
+    .structure-box-container {
+        position: absolute;
+        bottom: 50vw;
+    }
+    .sith2-img {
+        width: 52vw;
+        position: absolute;
+        bottom: -23vw;
+        right: 20vw;
+    }
+    .sith2 {
+        margin: unset;
+    }
+    .rey-img {
+        width: 25vw;
+        position: absolute;
+        bottom: -23vw;
+    }
+    .h2-first {
+        font-size: 4vw;
+        width: 40vw;
+    }
+    .h2-de {
+        font-size: 4vw;
+        width: 11%;
+        margin-left: 50%;
+    }
+    .h2-second {
+        font-size: 3.8vw;
+    }
+    .structure-text {
+        width: 40vw;
+        height: 40%;
+        margin-left: 35vw;
+        margin-top: 60%;
+    }
+    .structure-text p {
+        font-size: 2vw;
+        width: 38vw;
+    }
+}
+
+
+/* ATRIBUTTES --- MAIN --- */
+
+.atributtes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.atributtes-box {
+    display: flex;
+    width: 85%;
+}
+
+.atributtes h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.6vw;
+    font-weight: 900;
+    height: 17vw;
+    padding-top: 10vw;
+    margin-right: 60%;
+}
+
+.principal-figure {
+    width: 50%;
+    position: relative;
+}
+
+.principal-figure-img {
+    width: 100%;
+    height: 100%;
+}
+
+.smaller-figure {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.smaller-figure figure {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.smaller-figure img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ATRIBUTTES-BOX 769PX */
+
+@media (max-width:769px) {
+    .atributtes-box {
+        flex-direction: column;
+    }
+    .atributtes h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4.5vw;
+        margin-bottom: 4vw;
+    }
+    .principal-figure {
+        width: 100%;
+    }
+    .smaller-figure {
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .smaller-figure figure {
+        width: 100%;
+    }
+    .smaller-figure img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.hierarchy {
+    width: 85%;
+    margin-top: 3%;
+    border: lawngreen;
+}
+
+.hierarchy img {
+    width: 100%;
+}
+
+@media (max-width: 769px) {
+    .hierarchy {
+        width: 100%;
+    }
+}
+
+.hierarchy-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hierarchy-text p {
+    color: #fff;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1vw;
+    width: 53%;
+}
+
+.how-to-play {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20vw;
+}
+
+.how-to-play-text h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.7vw;
+    font-family: "Sovereign";
+    font-weight: 300;
+    text-align: left;
+    width: 55vw;
+}
+
+@media (max-width: 769px) {
+    .how-to-play-text h2 {
+        font-size: 4.1vw;
+        text-align: right;
+        padding-right: 15vw;
+    }
+    .hierarchy-text p {
+        font-size: 2vw;
+        width: 60%;
+        margin-right: 10vw;
+    }
+}
+
+
+/* MAIN BUTTONS SECTION*/
+
+.main-buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 17vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    margin-left: 25vw;
+    margin-top: 5vw;
+}
+
+.buttons h3 {
+    font-weight: 300;
+    font-size: 2.6vw;
+    text-align: center;
+    order: 1;
+}
+
+.buttons button {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    width: 14vw;
+    height: 3.7vw;
+    font-size: 1.5vw;
+    font-weight: 300;
+    border: none;
+    box-shadow: inset 0 0 #000, 2px 0 2px #000, 0 4px 4px #707070;
+    margin-top: 2vw;
+    order: 2;
+    transition: box-shadow ease 3s;
+    cursor: pointer;
+}
+
+.buttons p {
+    font-size: 1vw;
+    text-align: center;
+    width: 45%;
+    margin-top: 2vw;
+    order: 3;
+}
+
+.buttons span {
+    width: 6vw;
+    height: 6px;
+    background-color: #000;
+    margin-top: 2vw;
+    box-shadow: inset 0 0 #000;
+    order: 4;
+    transition: box-shadow ease 3s;
+}
+
+.buttons button:hover {
+    box-shadow: inset -14vw 0 #D74430, 2px 0 2px #000, 0 4px 4px #707070;
+    transition: box-shadow 1s ease;
+    -webkit-transition: box-shadow 1s ease;
+    -moz-transition: box-shadow 1s ease;
+    -o-transition: box-shadow 1s ease;
+}
+
+.buttons button:hover~span {
+    box-shadow: inset -6vw 0 #D74430;
+    transition: box-shadow 1s ease-in-out;
+    -webkit-transition: box-shadow 1s ease-in-out;
+    -moz-transition: box-shadow 1s ease-in-out;
+    -o-transition: box-shadow 1s ease-in-out;
+}
+
+.buttons button:hover~h3 {
+    font-weight: 900;
+}
+
+.buttons-download {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-choose {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-explore {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.black-cloack {
+    position: absolute;
+    top: -21vw;
+    left: 7vw;
+}
+
+.black-cloack img {
+    width: 28vw;
+}
+
+@media (max-width:769px) {
+    .black-cloack {
+        left: -40%;
+    }
+    .black-cloack img {
+        width: 100vw;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 40vw;
+    }
+    .buttons h3 {
+        font-size: 7vw;
+        margin-top: 4vw;
+    }
+    .buttons button {
+        width: 37vw;
+        height: 11vw;
+        font-size: 4vw;
+    }
+    .buttons p {
+        font-size: 3vw;
+        width: 200%;
+    }
+    .buttons span {
+        height: 4px;
+        width: 12vw;
+    }
+    .buttons button:hover {
+        box-shadow: inset -37vw 0 #D74430, 2px 0 2px #000, 0 4px 4px #707070;
+    }
+    .buttons button:hover~span {
+        box-shadow: inset -12vw 0 #D74430;
+    }
+}
+
+
+/*  FOOTER */
+
+footer {
+    display: flex;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF5A56;
+    position: relative;
+    align-items: center;
+    height: 46vw;
+    width: 67vw;
+}
+
+.left-box-upper-text {
+    width: 35vw;
+    margin-top: 7vw;
+}
+
+.left-box-upper-text h2 {
+    color: #fff;
+    font-family: "Gilroy";
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.left-box-upper-text p {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 300;
+    width: 78%;
+    margin-top: 2.6vw;
+}
+
+.download-app {
+    width: 35vw;
+    position: relative;
+    height: 8vw;
+    margin-top: 1.8vw;
+}
+
+.download-app button {
+    border: none;
+    box-shadow: none;
+    border-style: none;
+    background-color: #000;
+    height: 1vw;
+    border-radius: 10vw;
+    margin-right: 0.6vw;
+    cursor: pointer;
+}
+
+.download-app button:focus {
+    outline: none;
+}
+
+.download-app button:active {
+    transform: scale(0.99);
+}
+
+.download-app img {
+    width: 13.5vw;
+}
+
+.download-app::after {
+    content: "";
+    width: 28vw;
+    height: 5px;
+    background-color: #D74430;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left-box-sw {
+    width: 35vw;
+    margin-top: 3vw;
+}
+
+.left-box-sw img {
+    width: 13.5vw;
+}
+
+.left-box-final-paragraph {
+    width: 35vw;
+}
+
+.left-box-final-paragraph p {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 300;
+    width: 74%;
+    margin-top: 1.5vw;
+}
+
+.vader {
+    position: absolute;
+    bottom: 1.7vw;
+    left: 84%;
+}
+
+.vader img {
+    width: 40vw;
+}
+
+.right-box {
+    width: 39vw;
+    height: 46vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.right-box-paragraph {
+    width: 60%;
+    font-size: 0.8vw;
+    margin-bottom: 3vw;
+}
+
+@media (max-width:769px) {
+    footer {
+        flex-direction: column;
+    }
+    .left-box {
+        width: 100vw;
+        height: 190vw;
+        align-items: center;
+    }
+    .left-box-upper-text {
+        width: 100vw;
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-box-upper-text h2 {
+        font-size: 14vw;
+        text-align: center;
+    }
+    .left-box-upper-text p {
+        font-size: 4vw;
+        font-weight: 300;
+        width: 83%;
+        margin-top: 2.6vw;
+        text-align: left;
+        margin-bottom: 3vw;
+    }
+    .download-app {
+        width: 100vw;
+        position: relative;
+        height: unset;
+        margin-top: 1.8vw;
+        display: flex;
+        justify-content: center;
+        height: 25vw;
+    }
+    .download-app button {
+        height: 4vw;
+        margin-right: 2vw;
+    }
+    .download-app img {
+        width: 40vw;
+    }
+    .download-app::after {
+        width: 81vw;
+        height: 5px;
+        bottom: 4vw;
+        left: 8.5vw;
+    }
+    .left-box-sw {
+        width: 100vw;
+        margin-top: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+    .left-box-sw img {
+        width: 45vw;
+    }
+    .left-box-final-paragraph {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .left-box-final-paragraph p {
+        font-size: 4vw;
+        width: 83%;
+        margin-top: 5vw;
+    }
+    .vader {
+        position: absolute;
+        bottom: -59vw;
+        left: 10%;
+    }
+    .vader img {
+        width: 80vw;
+    }
+    .right-box {
+        width: 100vw;
+        height: 70vw;
+    }
+    .right-box-paragraph {
+        width: 80%;
+        font-size: 2.3vw;
+        margin-bottom: 3vw;
+    }
+}
